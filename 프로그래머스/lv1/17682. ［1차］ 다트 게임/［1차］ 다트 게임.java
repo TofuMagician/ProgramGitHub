@@ -40,10 +40,7 @@ class Solution {
         
         for(int i = 0; i < sentence.length; i++){ 
             
-            num[i] = funcMath(sentence[i]);
-            
-            System.out.print(num[i]+ " ");
-            
+            num[i] = funcMath(sentence[i]); 
         }
         int level = 0;
         
@@ -70,11 +67,8 @@ class Solution {
             
             level++;
         }
-        
-        System.out.println();
       
         while(!stack.isEmpty()){
-            System.out.print(stack.peek() +" ");
             answer += stack.pop();
         }
         
